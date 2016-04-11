@@ -41,6 +41,7 @@ class AgentController
   		 // def data = bankService.getBank(bankId)  // not working
   	        def data = bankService.getBanks()    
   	   // def data = ['Bank of America':3999, 'Wellsfargo':2889, 'Chase':1099] // from bank service	
+	   
   		   [data:data] // render 
 		  
   	    // def x = 100

@@ -39,8 +39,8 @@ class BankService {
                                                                            contentType "application/xml"	
                                                                          } 
 									 
-								    def status = response.status                  // internal parameter OK=200
-								    def banks = response.xml.bank.name           // [ 'Chase', 'Bank of America', 'Wellsfargo']
+								    def status = response.status                   // internal parameter OK=200
+								    def banks = response.xml.bank.name            // [ 'Chase', 'Bank of America', 'Wellsfargo']
 								    def loans = response.xml.bank.maxLoanAmount  // [ 3999, 2889,1099]
 									def ids  = response.xml.bank.id              // internal 1,2,3 
  
